@@ -17,12 +17,12 @@
 		96199E5716A0BB0E009FB7D0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96199E5616A0BB0E009FB7D0 /* Default@2x.png */; };
 		96199E5916A0BB0E009FB7D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96199E5816A0BB0E009FB7D0 /* Default-568h@2x.png */; };
 		96199E5C16A0BB0E009FB7D0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96199E5A16A0BB0E009FB7D0 /* MainStoryboard.storyboard */; };
-		96199E5F16A0BB0E009FB7D0 /* ERSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96199E5E16A0BB0E009FB7D0 /* ERSViewController.m */; };
 		96199E6716A0BB0E009FB7D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96199E6616A0BB0E009FB7D0 /* SenTestingKit.framework */; };
 		96199E6816A0BB0E009FB7D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96199E4216A0BB0E009FB7D0 /* UIKit.framework */; };
 		96199E6916A0BB0E009FB7D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96199E4416A0BB0E009FB7D0 /* Foundation.framework */; };
 		96199E7116A0BB0E009FB7D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96199E6F16A0BB0E009FB7D0 /* InfoPlist.strings */; };
 		96199E7416A0BB0E009FB7D0 /* Quiz2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96199E7316A0BB0E009FB7D0 /* Quiz2Tests.m */; };
+		96199E7F16A0BB55009FB7D0 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96199E7E16A0BB55009FB7D0 /* QuizViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +50,14 @@
 		96199E5616A0BB0E009FB7D0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		96199E5816A0BB0E009FB7D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		96199E5B16A0BB0E009FB7D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		96199E5D16A0BB0E009FB7D0 /* ERSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERSViewController.h; sourceTree = "<group>"; };
-		96199E5E16A0BB0E009FB7D0 /* ERSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERSViewController.m; sourceTree = "<group>"; };
 		96199E6516A0BB0E009FB7D0 /* Quiz2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quiz2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96199E6616A0BB0E009FB7D0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		96199E6E16A0BB0E009FB7D0 /* Quiz2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quiz2Tests-Info.plist"; sourceTree = "<group>"; };
 		96199E7016A0BB0E009FB7D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96199E7216A0BB0E009FB7D0 /* Quiz2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz2Tests.h; sourceTree = "<group>"; };
 		96199E7316A0BB0E009FB7D0 /* Quiz2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz2Tests.m; sourceTree = "<group>"; };
+		96199E7D16A0BB55009FB7D0 /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizViewController.h; path = ../QuizViewController.h; sourceTree = "<group>"; };
+		96199E7E16A0BB55009FB7D0 /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuizViewController.m; path = ../QuizViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				96199E5116A0BB0E009FB7D0 /* ERSAppDelegate.h */,
+				96199E7D16A0BB55009FB7D0 /* QuizViewController.h */,
+				96199E7E16A0BB55009FB7D0 /* QuizViewController.m */,
 				96199E5216A0BB0E009FB7D0 /* ERSAppDelegate.m */,
 				96199E5A16A0BB0E009FB7D0 /* MainStoryboard.storyboard */,
-				96199E5D16A0BB0E009FB7D0 /* ERSViewController.h */,
-				96199E5E16A0BB0E009FB7D0 /* ERSViewController.m */,
 				96199E4916A0BB0E009FB7D0 /* Supporting Files */,
 			);
 			path = Quiz2;
@@ -273,7 +273,7 @@
 			files = (
 				96199E4F16A0BB0E009FB7D0 /* main.m in Sources */,
 				96199E5316A0BB0E009FB7D0 /* ERSAppDelegate.m in Sources */,
-				96199E5F16A0BB0E009FB7D0 /* ERSViewController.m in Sources */,
+				96199E7F16A0BB55009FB7D0 /* QuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

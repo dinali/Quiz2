@@ -1,5 +1,5 @@
 //
-//  ERSViewController.h
+//  QuizViewController.h
 //  Quiz2
 //
 //  Created by Dina Li on 1/11/13.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ERSViewController : UIViewController
+@interface QuizViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 
 @end
